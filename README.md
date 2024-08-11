@@ -1,5 +1,6 @@
 # Calculate-BMI-BSA
-Simple calculator for BMI (Body Mass Index) and BSA (Body Surface Area)
+Simple calculator for BMI (Body Mass Index) and BSA (Body Surface Area).
+Link to the web app: https://calculate-bmi-bsa-git-main-simone-cosentinos-projects.vercel.app
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
