@@ -1,19 +1,39 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* General layout styles */
+body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  box-sizing: border-box;
 }
 
+/* Centered content container */
+.app-container {
+  width: 100%;
+  max-width: 800px; /* Limit content width for better readability */
+  padding: 20px;
+  background: white; /* Optional: Add a background color to the content area */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box;
+}
+
+/* Logo styles */
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 3em; /* Reduced height */
+  padding: 0.5em; /* Reduced padding */
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,47 +53,97 @@
   }
 }
 
+/* Card styles */
 .card {
-  padding: 2em;
+  padding: 1em; /* Further reduced padding */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Reduced margin */
 }
 
 .read-the-docs {
   color: #888;
 }
 
-/* src/App.css */
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
-
 .title {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 2em; /* Reduced font size */
+  margin-bottom: 10px; /* Further reduced margin */
   text-align: center;
+  color: #4a90e2;
+  font-weight: bold;
 }
 
+/* Main content layout */
 .main-content {
   display: flex;
   width: 100%;
-  max-width: 1200px; /* Adjust as needed */
+  max-width: 1400px; /* Adjusted for a wider layout */
+  margin-top: 5px; /* Further reduced margin */
 }
 
 .left-section {
   width: 50%;
-  padding-right: 20px;
+  padding-right: 15px; /* Reduced padding */
+  text-align: left;
 }
 
 .right-section {
   width: 50%;
   text-align: right;
-  font-size: 2em; /* Increase the font size for larger display */
+  font-size: 1.8em; /* Slightly reduced font size */
+  color: #4a90e2;
 }
 
+/* Right section headers */
 .right-section h2 {
-  margin: 20px 0;
+  margin: 10px 0; /* Further reduced margin */
+  color: #ff4081;
+}
+
+/* Form and input styles */
+label {
+  display: block;
+  margin: 6px 0 2px; /* Further reduced margin */
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 6px; /* Further reduced padding */
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  margin-bottom: 2px; /* Further reduced margin */
+  box-sizing: border-box;
+  font-size: 1.2em; /* Increased font size for larger numbers */
+  height: 30px; /* Increased height for input fields */
+}
+
+button {
+  width: 100%;
+  padding: 8px; /* Further reduced padding */
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 8px; /* Further reduced margin */
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+/* Result display styles */
+.result {
+  font-size: 2.2rem; /* Slightly reduced font size */
+  font-weight: bold;
+  margin-top: 10px; /* Further reduced margin */
+  color: #4a90e2;
+}
+
+h3 {
+  color: #ff4081;
 }
